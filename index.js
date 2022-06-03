@@ -11,7 +11,7 @@ const {
 const hostname = '127.0.0.1';
 const port = process.env.PORT || 5000;
 
-// create the server
+// creating the server
 const server = http.createServer((req, res) => {
   if (req.url === '/students' && req.method === 'GET') {
     getStudents(req, res);
