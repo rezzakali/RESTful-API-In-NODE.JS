@@ -31,7 +31,7 @@ const update = (id, student) =>
     writeDataToFile('./students.json', students);
     resolve(student[index]);
   });
-// delete the student by id
+// delete  student by id
 const remove = (id) =>
   new Promise((resolve, reject) => {
     students = students.filter((s) => s.id !== id);
